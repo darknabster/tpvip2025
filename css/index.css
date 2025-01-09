@@ -6,6 +6,10 @@ html,
 body {
   height: 100%;
 }
+body {
+  user-select: none; /* Prevents text selection */
+  -webkit-user-drag: none; /* Prevents dragging elements in WebKit browsers */
+}
 img {
   display: block;
 }
@@ -39,15 +43,13 @@ img {
   width: 100%;
   margin-top: -2rem;
 }
-.top3 {
-  padding-left: 0.45rem;
-}
 .top3 img {
-  width: 94%;
-    padding: 20px;
+  width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
+    padding-left: 1rem;
 }
 .swiper {
   width: 94%;
@@ -63,11 +65,12 @@ img {
   width: 100%;
 }
 .top2 img {
-  width: 94%;
-    padding: 20px;
+  width: 90%;
+    /* padding: 20px; */
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
 }
 .note {
   color: #fff;
@@ -184,7 +187,9 @@ img {
 .foot img {
   width: 100%;
 }
-
+.content {
+  width: 100%;
+}
 .message {
   display: none;
   color: red;
@@ -248,6 +253,7 @@ font-size: 1.5rem;
   background: url("../img/bg.png") no-repeat 100% -1%/100% auto, #292454;
   margin: 0 auto;
   padding-bottom: 7.6rem;
+  overflow: hidden;
 }
 .down img {
   width: 100%;
@@ -300,6 +306,5 @@ font-size: 1.5rem;
   .content,
   .foot {
     width: 100%;
-    max-width: 750px;
   }
 }
